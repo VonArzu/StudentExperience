@@ -61,6 +61,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\GamePiece.cs" />
     <Compile Include="Assets\Scripts\Grid.cs" />
     <Reference Include="UnityEditor.StandardEvents">
       <HintPath>C:/Users/VonAr/Documents/GitHub/StudentExperience/Assets/StudentExpo/StudentExpoProject/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
