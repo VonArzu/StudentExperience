@@ -1,10 +1,16 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class ClearLinePiece : ClearablePiece
+public class ClearColorPiece : ClearablePiece
 {
 
-    public bool isRow;
+    private ColorPiece.ColorType color;
+
+    public ColorPiece.ColorType Color
+    {
+        get { return color; }
+        set { color = value; }
+    }
 
     // Use this for initialization
     void Start()
@@ -21,14 +27,6 @@ public class ClearLinePiece : ClearablePiece
     public override void Clear()
     {
         base.Clear();
-
-        if (isRow)
-        {
-            piece.GridRef.ClearRow(piece.Y);
-        }
-        else
-        {
-            piece.GridRef.ClearColumn(piece.X);
-        }
+        piece.GridRef.ClearColor(color);
     }
 }

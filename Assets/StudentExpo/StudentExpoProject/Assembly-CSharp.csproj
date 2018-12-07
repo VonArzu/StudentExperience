@@ -64,8 +64,14 @@
     <Compile Include="Assets\Scripts\ClearablePiece.cs" />
     <Compile Include="Assets\Scripts\ClearColorPiece.cs" />
     <Compile Include="Assets\Scripts\ColorPiece.cs" />
+    <Compile Include="Assets\Scripts\GameOver.cs" />
     <Compile Include="Assets\Scripts\GamePiece.cs" />
     <Compile Include="Assets\Scripts\Grid.cs" />
+    <Compile Include="Assets\Scripts\HUD.cs" />
+    <Compile Include="Assets\Scripts\Level.cs" />
+    <Compile Include="Assets\Scripts\LevelMoves.cs" />
+    <Compile Include="Assets\Scripts\LevelObstacles.cs" />
+    <Compile Include="Assets\Scripts\LevelTimer.cs" />
     <Compile Include="Assets\Scripts\MovablePiece.cs" />
     <Reference Include="UnityEditor.StandardEvents">
       <HintPath>C:/Users/VonAr/Documents/GitHub/StudentExperience/Assets/StudentExpo/StudentExpoProject/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>

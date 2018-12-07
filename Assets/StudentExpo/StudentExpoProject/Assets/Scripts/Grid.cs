@@ -72,7 +72,7 @@ public class Grid : MonoBehaviour
             }
         }
 
-        for (int x = 0; x < xDim; x++)
+       for (int x = 0; x < xDim; x++)
         {
             for (int y = 0; y < yDim; y++)
             {
@@ -736,4 +736,4 @@ public class Grid : MonoBehaviour
 
         return piecesOfType;
     }
-}
+} 

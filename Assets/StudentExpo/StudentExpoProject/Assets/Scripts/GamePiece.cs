@@ -4,6 +4,8 @@ using System.Collections;
 public class GamePiece : MonoBehaviour
 {
 
+    public int score;
+
     private int x;
     private int y;
 
@@ -59,10 +61,18 @@ public class GamePiece : MonoBehaviour
         get { return colorComponent; }
     }
 
+    private ClearablePiece clearableComponent;
+
+    public ClearablePiece ClearableComponent
+    {
+        get { return clearableComponent; }
+    }
+
     void Awake()
     {
         movableComponent = GetComponent<MovablePiece>();
         colorComponent = GetComponent<ColorPiece>();
+        clearableComponent = GetComponent<ClearablePiece>();
     }
 
     // Use this for initialization
@@ -85,6 +95,21 @@ public class GamePiece : MonoBehaviour
         type = _type;
     }
 
+    void OnMouseEnter()
+    {
+        grid.EnterPiece(this);
+    }
+
+    void OnMouseDown()
+    {
+        grid.PressPiece(this);
+    }
+
+    void OnMouseUp()
+    {
+        grid.ReleasePiece();
+    }
+
     public bool IsMovable()
     {
         return movableComponent != null;
@@ -93,5 +118,10 @@ public class GamePiece : MonoBehaviour
     public bool IsColored()
     {
         return colorComponent != null;
+    }
+
+    public bool IsClearable()
+    {
+        return clearableComponent != null;
     }
 }
