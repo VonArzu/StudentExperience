@@ -1,2 +1,2 @@
-# StudentExperience
-A Student's Experience with books and assignments falling from the sky/school on a terrain
+# StudentExperience FINAL GAME DESIGN 415
+A Student's Experience with books match three like bejewled and candy crush. I have followed a turtorial on Lynda.com but the match three used there was about gold fish. I uploaded and edited my own sprited and backgrounds. There is no error in my code but my grid will not drop. I restarted this project three times. The first time i was building a terrain. The second time I was building a roll a ball with assets. The third time, and where i am now I followed a step by step video but tried to customize and it did not work. I tried my best to complete this own my own. I have been to everyclass and even attended the other classes on Fridays. I tried.
